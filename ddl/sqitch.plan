@@ -1,0 +1,5 @@
+%syntax-version=1.0.0
+%project=ccdb
+
+ccdbschema 2016-01-08T20:59:37Z Frank Rodriguez <franciso.rodriguez@cfpb.gov> # Add schema for ccdb.
+datecast [ccdbschema] 2016-01-12T15:15:11Z Frank Rodriguez <franciso.rodriguez@cfpb.gov> # Cast the "Date received" column to a postgred date type
