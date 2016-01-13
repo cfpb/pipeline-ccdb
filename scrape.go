@@ -19,7 +19,7 @@ func check(e error) {
 func main() {
 
     var source string = "https://data.consumerfinance.gov/api/views/s6ew-h6mp/rows.csv?accessType=DOWNLOAD"
-    var tmp string = "cfpb_ccdb.csv"
+    var tmp string = "data/cfpb_ccdb.csv"
 
 
     if _, err := os.Stat(tmp); os.IsNotExist(err) {
@@ -55,7 +55,7 @@ func main() {
 
     //print out headers and a few lines
 	fmt.Printf("Headers: %v\n", headers)
-    for i := range lines[:32] {
+    for i := range lines[:3] {
     	fmt.Printf("Line %v: %v\n", i, lines[i])
     }
     os.Exit(0)
